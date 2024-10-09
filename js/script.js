@@ -1,7 +1,7 @@
-const menus = document.querySelector("nav ul");
+const menus = document.querySelector("navbar");
 const header = document.querySelector("header");
-const menuBtn = document.querySelector(".menu-btn");
-const closeBtn = document.querySelector(".close-btn");
+const menuBtn = document.querySelector(".menu-icon");
+const closeBtn = document.querySelector(".close-icon");
 
 menuBtn.addEventListener("click", () => {
     menus.classList.add("display");

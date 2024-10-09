@@ -81,8 +81,8 @@ a{
 
 /*========================= Header Start ======================*/
 
-header{
-    /*background: var(--primary-color);*/ 
+/* header{
+    /*background: var(--primary-color);
     padding: 1rem 0;
     position: absolute;
     top: 0;
@@ -140,10 +140,76 @@ nav ul li:hover::before{
     color: var(--white-color);
     cursor: pointer;
     display: none;
+} */
+
+.header{
+  
+    top:0;
+    left: 0;
+    width: 100%;
+    position: absolute;
+    z-index: 100;
+    padding: 1rem 0;
+   justify-content: center;
+    display: flex;
+    align-items: center;
+
+}
+.header::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .1);
+    backdrop-filter: blur(50px);
+    z-index: -1;
+   
+    
+}
+
+.header::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: rgba(0, 0, 0, .1);
+    backdrop-filter: blur(50px);
+  
 }
 
 
+.logo img{
+    width: 25%;
+    height: 100%;
+    object-fit: cover;
+    top: 0;
+}
+.navbar a {
+    font-size: 1.15rem;
+color: #fff;
+text-decoration: none;
+font-weight: 500;
+margin: 0 0.5rem;
+position: relative;
+}
 
+.icons{
+    position: absolute;
+    right: 5%;
+    font-size: 2.8rem;
+    color: #fff;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
 /*========================= Header Close ======================*/
 
 /*========================= Showcase Start ======================*/
