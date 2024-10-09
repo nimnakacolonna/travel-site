@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Tour and Travel Website</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    
+    
+    <link rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+</head>
+<body>
+
+  <!--============== Header ===============start-->
+  <header>
+   <div class="container">
+    <nav>
+      <div class="logo">
+        <img src="./img/travel.png" alt="" />
+      </div>
+      
+    
+      <ul>
+        <div class="btn">
+          <i class="fas fa-times close-btn"></i>
+        </div>
+        <label for="" class="icons"></label>
+      
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Tours</a></li>
+            <li><a href="#">Destination</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+                <div class="btn">
+            <i class="fas fa-bars menu-btn"></i>
+                  </div>
+          </nav>
+   </div>
+  </header>
+<!--============== Header ===============close-->
+
+<!--============== ShowCase ===============start-->
+<main>
+  <div class="slide-container swiper">
+    <div class="slide-content swiper-wrapper">
+      <div class="overlay swiper-slide">
+        <img src="./img/mirissa.jpg" alt="">
+        <div class="img-overlay">
+          <p>Let's Travel the World with us</p>
+          <h2><span>Discover</span> The World</h2>
+          <h2>With our Guide</h2>
+        </div>
+      </div>
+      <div class="overlay swiper-slide">
+        <img src="./img/temple.jpg" alt="">
+        <div class="img-overlay">
+          <p>Let's Travel the World with us</p>
+          <h2><span>Discover</span> The World</h2>
+          <h2>With our Guide</h2>
+        </div>
+      </div>
+      <div class="overlay swiper-slide">
+        <img src="./img/fall.jpg" alt="">
+        <div class="img-overlay">
+          <p>Let's Travel the World with us</p>
+          <h2>Discover The World</h2>
+          <h2>With our <span>Travelo</span></h2>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+</main>
+
+ <!--============== ShowCase ===============close-->
+
+<!--============== Search Location ===============Start-->
+<section id="location-search">
+  <div class="container">
+    <div class="form-wrapper">
+      <form action="#">
+        <input type="text" placeholder="Where to?" class="form-control">
+        <select class="form-control">
+          <option value="Destination">Destination</option>
+          <option value="Destination">Greece</option>
+          <option value="Destination">London</option>
+          <option value="Destination">Maldives</option>
+          <option value="Destination">Paris</option>
+        </select>
+        <select class="form-control">
+          <option value="Duration">Duration</option>
+          <option value="day-1">1 Day Tour</option>
+          <option value="2-4 ">2-4 Day Tour</option>
+          <option value="5-7 Days">5-7 Day Tour</option>
+          <option value="7+ Days">7+ Day Tour</option>
+        </select>
+        <button type="button" class="primary-btn">Search Now</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!--============== Search Location ===============Close-->
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/swiper.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
