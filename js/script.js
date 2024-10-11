@@ -22,3 +22,29 @@ window.addEventListener("scroll",() =>{
 
     
 })
+
+// Static Numbers
+
+const countersEl = document.querySelectorAll(".numbers");
+countersEl.forEach((counters)=>{
+    counters.textContent = 0;
+
+    incrementCounters();
+
+    function incrementCounters(){
+        let currentNum = +counters.textContent;
+        const dataCeil = counters.getAttribute("data-ceil");
+
+        const increment = dataCeil / 25;
+
+        currentNum = Math.ceil(currentNum + increment);
+
+        if(currentNum < dataCeil){
+            counters.textContent = currentNum;
+            setTimeout(incrementCounters, 50);
+
+        }else{
+            counters.textContent = dataCeil;
+        }
+    }
+})

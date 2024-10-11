@@ -170,5 +170,23 @@
         width: 90%;
        
     }
+    /*choose place*/
+    .choose-wrapper{
+        grid-template-columns: 1fr;
+    }
+
+    .row-wisw-img{
+        
+        grid-template-columns: 1fr;
+       
+    }
+    .img-content{
+        bottom: 10px;
+    }
+    /*static couunter*/
+
+    .static-wrapper{
+        grid-template-columns: 2fr;
+    }
     
 }

@@ -26,6 +26,7 @@ html{
     margin: 0 auto;
     padding: 0 2rem;
     width: 100% ;
+    overflow: hidden;
 }
 
 img{
@@ -460,7 +461,7 @@ transform: scale(1.02);
     transition: all 0.5s ease-in-out;
 }
 .hidden-content i{
-    padding: 0 0.5rem;
+    padding: 0.2rem 0.2rem 0 0 ;
 }
 
 
@@ -485,4 +486,114 @@ transform: scale(1.02);
     grid-gap: 2rem;
     padding: 2rem 0;
 }
-/*========================= Choose Place Close ======================*/
+/*--========================= Choose Place Close ======================-*/
+
+
+/*--============== Static Counter Start ===============*/
+
+#static-counter{
+    padding: 6rem 0;
+    background: url("../img/ellabridge.jpg") no-repeat center center/cover;
+    background-attachment:fixed;
+    position: relative;
+    z-index: 4;
+}
+
+#static-counter::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+}
+
+.static-wrapper{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 2rem;
+    text-align: center;
+    align-items: center;
+    height: 100%;
+    padding: 2rem 0;
+   
+}
+
+.static-icons{
+    color: var(--white-color);
+    cursor: pointer;
+}
+.static-icons i{
+    font-size: 3rem;
+    padding: 2rem;
+    border-radius: 50%;
+    border: 2px solid var(--primary-color);
+    cursor: pointer;
+    transition: all 0.3s ease-in;
+}
+
+.numbers{
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-top: 1rem;
+}
+
+.static-icons i:hover{
+    background: var(--primary-color);
+    border: none;
+    transform: translateY(-20%);
+}
+
+/*--============== Static Counter Close ===============*/
+
+/*<!--============== Top Destination Start ===============-->*/
+
+#top-destination{
+    padding: 6rem 0;
+}
+
+.top-destination-wrapper{
+    width: 100%;
+}
+
+.carousel{
+    position: relative;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+
+.carousel:hover::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+
+}
+
+.carousel-img-overlay{
+    width: 100%;
+}
+
+.hidden-content-carousel{
+    padding: 0.5rem 2rem;
+    color: var(--white-color);
+    transform: translateY(120%);
+    transition: all 0.5s ease-in-out;
+}
+
+.carousel-img-overlay i{
+    padding-right: 1rem;
+}
+
+.carousel:hover .hidden-content-carousel{
+    transform: translateY(0%)
+}
+.carousel:hover{
+    transform: scale(1.2);
+}
+/*<!--============== Top Destination Start ===============-->*/
