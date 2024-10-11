@@ -1,22 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive Tour and Travel Website</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/responsive.css">
-    
 
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    
-    <link rel="stylesheet" 
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-    <link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-/>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Tour and Travel Website</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+
+
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
+
 <body>
 
   <!--============== Header ===============start-->
@@ -49,99 +47,244 @@
   </header> -->
 
 
-<header class="header">
-  <a href="#" class="logo">
-    <img src="./img/travel.png" alt="" />
-  </a>
+  <header class="header">
+    <a href="#" class="logo">
+      <img src="./img/travel.png" alt="" />
+    </a>
 
-  <input type="checkbox" id="check">
-<label for="check" class="icons">
-  <i class="bx bx-menu" id="menu-icon"></i>
-  <i class="bx bx-x" id="close-icon"></i>
-</label>
+    <input type="checkbox" id="check">
+    <label for="check" class="icons">
+      <i class="bx bx-menu" id="menu-icon"></i>
+      <i class="bx bx-x" id="close-icon"></i>
+    </label>
 
-  <nav class="navbar">
-    <a href="#" style="--i:0;">Home</a>
-    <a href="#" style="--i:1;">About</a>
-    <a href="#" style="--i:2;">Tours</a>
-    <a href="#" style="--i:3;">Destination</a>
-    <a href="#" style="--i:4;">Gallery</a>
-    <a href="#" style="--i:5;">Contact</a>
-  </nav>
+    <nav class="navbar">
+      <a href="#" style="--i:0;">Home</a>
+      <a href="#" style="--i:1;">About</a>
+      <a href="#" style="--i:2;">Tours</a>
+      <a href="#" style="--i:3;">Destination</a>
+      <a href="#" style="--i:4;">Gallery</a>
+      <a href="#" style="--i:5;">Contact</a>
+    </nav>
 
-</header>
+  </header>
 
 
-<!--============== Header ===============close-->
+  <!--============== Header ===============close-->
 
-<!--============== ShowCase ===============start-->
-<main>
-  <div class="slide-container swiper">
-    <div class="slide-content swiper-wrapper">
-      <div class="overlay swiper-slide">
-        <img src="./img/mirissa.jpg" alt="">
-        <div class="img-overlay">
-          <p>Let's Travel the World with us</p>
-          <h2><span>Discover</span> The World</h2>
-          <h2>With our Guide</h2>
+  <!--============== ShowCase ===============start-->
+  <main>
+    <div class="slide-container swiper">
+      <div class="slide-content swiper-wrapper">
+        <div class="overlay swiper-slide">
+          <img src="./img/mirissa.jpg" alt="">
+          <div class="img-overlay">
+            <p>Let's Travel the World with us</p>
+            <h2><span>Discover</span> The World</h2>
+            <h2>With our Guide</h2>
+          </div>
+        </div>
+        <div class="overlay swiper-slide">
+          <img src="./img/temple.jpg" alt="">
+          <div class="img-overlay">
+            <p>Let's Travel the World with us</p>
+            <h2><span>Discover</span> The World</h2>
+            <h2>With our Guide</h2>
+          </div>
+        </div>
+        <div class="overlay swiper-slide">
+          <img src="./img/fall.jpg" alt="">
+          <div class="img-overlay">
+            <p>Let's Travel the World with us</p>
+            <h2>Discover The World</h2>
+            <h2>With our <span>Travelo</span></h2>
+          </div>
         </div>
       </div>
-      <div class="overlay swiper-slide">
-        <img src="./img/temple.jpg" alt="">
-        <div class="img-overlay">
-          <p>Let's Travel the World with us</p>
-          <h2><span>Discover</span> The World</h2>
-          <h2>With our Guide</h2>
-        </div>
+
+
+    </div>
+  </main>
+
+  <!--============== ShowCase ===============close-->
+
+  <!--============== Search Location ===============Start-->
+  <section id="location-search">
+    <div class="container">
+      <div class="form-wrapper">
+        <form action="#">
+          <input type="text" placeholder="Where to?" class="form-control">
+          <select class="form-control">
+            <option value="Destination">Destination</option>
+            <option value="Destination">Greece</option>
+            <option value="Destination">London</option>
+            <option value="Destination">Maldives</option>
+            <option value="Destination">Paris</option>
+          </select>
+          <select class="form-control">
+            <option value="Duration">Duration</option>
+            <option value="day-1">1 Day Tour</option>
+            <option value="2-4 ">2-4 Day Tour</option>
+            <option value="5-7 Days">5-7 Day Tour</option>
+            <option value="7+ Days">7+ Day Tour</option>
+          </select>
+          <button type="button" class="primary-btn">Search Now</button>
+        </form>
       </div>
-      <div class="overlay swiper-slide">
-        <img src="./img/fall.jpg" alt="">
-        <div class="img-overlay">
-          <p>Let's Travel the World with us</p>
-          <h2>Discover The World</h2>
-          <h2>With our <span>Travelo</span></h2>
+    </div>
+  </section>
+
+  <!--============== Search Location ===============Close-->
+
+  <!--============== About ===============Start-->
+
+  <section id="about">
+    <div class="container">
+      <div class="about-content-wrapper">
+        <div class="agency-left-side">
+          <p class="heading-normal-txt">THE BEST TRAVEY AGENCY</p>
+          <h2 class="heading">
+            DISCOVER THE <span>WORLD</span> WITH OUR GUIDE
+          </h2>
+          <p class="lead">
+            You can choose any country with good tourism. Agency elementum
+            sesue the aucan vestibulum attquam justo tn sapien rutrun
+            voLutpat. in quis the peLLentesque vetit.d vetit ac
+            arcu posuere blane.
+          </p>
+        </br>
+          <p class="lead">
+            Hotel ut nist quan nestibutun ae quan nee odio elementun eeisue
+            She niss varius natoque penatibus et magnis dis parturient mote.
+          </p>
+          <ul>
+            <li>
+              <div class="icon">
+                <i class="fa fa-check"></i>
+                <p>20 years of Experience</p>
+              </div>
+            </li>
+            <li>
+              <div class="icon">
+                <i class="fa fa-check"></i>
+                <p>150 Tour Destination</p>
+              </div>
+            </li>
+            <li>
+              <div class="icon">
+                <i class="fa fa-phone-volume"></i>
+                <p>855 333 4444</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="agency-right-side">
+          <div class="img">
+            <img src="./img/girl4.jpg" alt="">
+          </div>
         </div>
       </div>
     </div>
 
+  </section>
+  <!--============== About ===============Close-->
 
-  </div>
-</main>
-
- <!--============== ShowCase ===============close-->
-
-<!--============== Search Location ===============Start-->
-<section id="location-search">
+  <!--============== Choose Your Place Start ===============-->
+<section id="choose-place">
   <div class="container">
-    <div class="form-wrapper">
-      <form action="#">
-        <input type="text" placeholder="Where to?" class="form-control">
-        <select class="form-control">
-          <option value="Destination">Destination</option>
-          <option value="Destination">Greece</option>
-          <option value="Destination">London</option>
-          <option value="Destination">Maldives</option>
-          <option value="Destination">Paris</option>
-        </select>
-        <select class="form-control">
-          <option value="Duration">Duration</option>
-          <option value="day-1">1 Day Tour</option>
-          <option value="2-4 ">2-4 Day Tour</option>
-          <option value="5-7 Days">5-7 Day Tour</option>
-          <option value="7+ Days">7+ Day Tour</option>
-        </select>
-        <button type="button" class="primary-btn">Search Now</button>
-      </form>
+    <p class="heading-normal-txt">CHOOSE YOUR PLACE</p>
+    <h2 class="headings">POPULAR <span>TOURS</span></h2>
+    <div class="choose-wrapper">
+      <div class="img-left-side">
+        <div class="lg-img">
+          <img src="./img/Tea-Plantations.jpg" alt="">
+          <div class="img-content">
+            <h2>YALA Tours</h2>
+            <div class="hidden-content">
+              <span><i class="fa fa-clock"></i>10 Days</span>
+              <span><i class="fa fa-user"></i>12+</span>
+              <span><i class="fa fa-Location-dot"></i>Maldives</span>
+            </div>
+          </div>
+          <div class="price-label">
+            <p>$2500</p>
+          </div>
+        </div>
+      </div>
+      <div class="img-right-side">
+        <div class="lg-img">
+          <img src="./img/Kandy.jpg" alt="">
+          <div class="img-content">
+            <h2>GALLE Tours</h2>
+            <div class="hidden-content">
+              <span><i class="fa fa-clock"></i>10 Days</span>
+              <span><i class="fa fa-user"></i>12+</span>
+              <span><i class="fa fa-Location-dot"></i>Itlay</span>
+            </div>
+          </div>
+          <div class="price-label">
+            <p>$2500</p>
+        </div>
+      </div>
     </div>
-  </div>
+    </div>
+    <!--row wise images-->
+    <div class="row-wisw-img">
+      <div class="lg-img">
+        <img src="./img/fish.jpg" alt="">
+        <div class="img-content">
+          <h2>France Tours</h2>
+          <div class="hidden-content">
+            <span><i class="fa fa-clock"></i>10 Days</span>
+            <span><i class="fa fa-user"></i>12+</span>
+            <span><i class="fa fa-Location-dot"></i>France</span>
+          </div>
+        </div>
+        <div class="price-label">
+          <p>$400</p>
+        </div>
+      </div>
+      <div class="lg-img">
+        <img src="./img/Kitulgala-3.jpg" alt="">
+        <div class="img-content">
+          <h2>Grees Tours</h2>
+          <div class="hidden-content">
+            <span><i class="fa fa-clock"></i>10 Days</span>
+            <span><i class="fa fa-user"></i>12+</span>
+            <span><i class="fa fa-Location-dot"></i>Grees</span>
+          </div>
+        </div>
+        <div class="price-label">
+          <p>$500</p>
+        </div>
+      </div>
+      <div class="lg-img">
+        <img src="./img/sigiriya.jpg" alt="">
+        <div class="img-content">
+          <h2>Canada Tours</h2>
+          <div class="hidden-content">
+            <span><i class="fa fa-clock"></i>10 Days</span>
+            <span><i class="fa fa-user"></i>12+</span>
+            <span><i class="fa fa-Location-dot"></i>Canada</span>
+          </div>
+        </div>
+        <div class="price-label">
+          <p>$400</p>
+        </div>
+      </div>
+    </div>
+  
 </section>
 
-<!--============== Search Location ===============Close-->
+
+  <!--============== Choose Your Place Close ===============-->
 
 
 
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="js/swiper.js"></script>
-    <script src="js/script.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="js/swiper.js"></script>
+  <script src="js/script.js"></script>
 </body>
+
 </html>
