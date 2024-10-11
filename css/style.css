@@ -147,14 +147,20 @@ nav ul li:hover::before{
     top:0;
     left: 0;
     width: 100%;
-    position: absolute;
+    position: fixed;
     z-index: 100;
     padding: 1rem 0;
    justify-content: center;
     display: flex;
     align-items: center;
+    transition: all 0.3s ease-in-out;
 
 }
+header.sticky{
+    background: var(--primary-color);
+  
+}
+
 .header::before{
     content: "";
     position: absolute;
@@ -180,7 +186,6 @@ nav ul li:hover::before{
     z-index: -1;
     background: rgba(0, 0, 0, .1);
     backdrop-filter: blur(50px);
-  
 }
 
 
@@ -307,6 +312,7 @@ main{
 
 #location-search{
     transform: translateY(-170%);
+ 
 }
 
 .form-wrapper{
@@ -323,6 +329,7 @@ form{
 
 .form-control{
 width: 100%;
+
 }
 
 form input,select{
@@ -335,3 +342,147 @@ form input,select{
     border-radius: 4px;
 }
 /*========================= Search Close ======================*/
+
+/*========================= About Start ======================*/
+.about-content-wrapper{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 3rem;
+    margin: 3rem 0;
+
+}
+
+.about-content-wrapper h2 span{
+    color: var(--primary-color);
+    font-family: "ubuntu";
+}
+
+.about-content-wrapper ul {
+    list-style: none;
+}
+
+.about-content-wrapper ul .icon{
+    display: flex;
+    align-items: center;
+    margin: 1rem 0;
+}
+
+.about-content-wrapper ul .icon i {
+    background: var(--primary-color);
+    padding: 0.8rem;
+    border-radius: 50%;
+    color: var(--white-color);
+}
+
+.about-content-wrapper ul p{
+    margin-left: 1rem; 
+}
+.agency-right-side .img{
+    position: relative;
+}
+.agency-right-side .img img{
+    width: 75%;
+    height: 100%;
+    object-fit: cover;
+    margin: 0 auto;
+    display: block;
+    transition: 0.5s ease-in;
+}
+
+.agency-right-side .img::after{
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: 55px;
+    bottom: 0;
+    right: 0;
+    background: var(--primary-color);
+    width: 70%;
+    height: 100%;
+    z-index: -2;
+   
+}
+.agency-right-side .img img:hover{
+    transform: scale(0.95);
+}
+
+/*========================= About Close ======================*/
+
+/*========================= Choose Place Start ======================*/
+
+#choose-place{
+    padding: 6rem 0;
+}
+.choose-wrapper{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 2rem;
+}
+.lg-img{
+    position: relative;
+    transition: all 0.5s;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+}
+
+.lg-img:hover::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.lg-img:hover{
+transform: scale(1.02);
+
+
+}
+.img-content{
+    position: absolute;
+    bottom: 20px;
+    left: 5%;
+}
+
+
+.img-content h2{
+    padding: 0 2rem;
+    color: var(--white-color);
+}
+
+.hidden-content{
+    padding: 0.5rem 2rem;
+    color: var(--white-color);
+    transform: translateY(120%);
+    transition: all 0.5s ease-in-out;
+}
+.hidden-content i{
+    padding: 0 0.5rem;
+}
+
+
+.lg-img:hover .hidden-content{
+    transform: translateY(0%);
+}
+
+
+.price-label{
+    background: var(--primary-color);
+    color: var(--white-color);
+    padding: 0.5rem 1rem;
+    position: absolute;
+    top:50px;
+    right:0 ;
+    transform: rotate(-90deg);
+}
+
+.row-wisw-img{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 2rem;
+    padding: 2rem 0;
+}
+/*========================= Choose Place Close ======================*/
