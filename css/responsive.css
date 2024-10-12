@@ -186,7 +186,48 @@
     /*static couunter*/
 
     .static-wrapper{
-        grid-template-columns: 2fr;
+        grid-template-columns: repeat(2 , 1fr);
     }
     
+
+    /*vedio*/
+
+    #costa-victoria{
+        padding: 2rem 0;
+        position: relative;
+    }
+
+    .video-content h2{
+        font-size: 2rem;
+        letter-spacing: 2px;
+    }
+    
+    .video-content span{
+        font-size: 1rem;
+    }
+
+    .travel-countries-wrapper{
+        display: grid;
+        grid-template-columns: 2fr 3fr;
+        width: 100%;
+        grid-gap: 2rem;
+    }
+
+    /*travel Countries Start*/
+
+    .travel-countries-wrapper{
+    
+        grid-template-columns: 2fr ;
+    }
+    .france-content{
+     
+        grid-template-columns: 2fr;
+      
+    }
+
+    /*responsive*/
+
+    .blog-img-content{
+      bottom: 10px;
+    }
 }
