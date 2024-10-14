@@ -18,6 +18,9 @@
     display: flex;
    }
 
+   .headings {
+    font-size: 2.2rem;
+  }
 
 }
 
@@ -225,9 +228,37 @@
       
     }
 
-    /*responsive*/
+    /*blog*/
 
     .blog-img-content{
       bottom: 10px;
     }
-}
+
+    /*footer start*/
+    .footer-content{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer-wrapper{
+        grid-template-columns: repeat(2,1fr);
+    } 
+
+
+     .Subscribe button{
+        top: 25%;
+        right: 3%;
+    } 
+    }
+
+    @media(max-width:645px){
+        html {
+            font-size: 14px;
+          }
+          .footer-content{
+            grid-template-columns: repeat(1, 1fr);
+        }
+
+        .footer-wrapper{
+            grid-template-columns: repeat(1,1fr);
+        } 
+    }
